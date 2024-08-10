@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de la Placa Madre - Softfine</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Softfine</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="procesadores.html">Procesadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="discos.html">Discos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="graficas.html">Gráficas</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="placas_madre.html">Placas Madre</a>
+                    </li>
+                    <!-- Otros enlaces -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección de detalles de la placa madre -->
+    <main class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <img id="placa-imagen" src="" alt="Imagen de la Placa Madre" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2 id="placa-nombre"></h2>
+                <p id="placa-socket"></p>
+                <p id="placa-precio" class="text-danger font-weight-bold"></p>
+                <p id="placa-especificaciones"></p>
+                <a href="#" id="btn-add-cart" class="btn btn-primary">Añadir al Carrito</a>
+                <a href="pago.html" class="btn btn-success">Comprar Ahora</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center p-4">
+        <p>&copy; 2024 Softfine. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Archivos JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/detalle_placa_madre.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles Fuente de Alimentación - Softfine</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Softfine</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="procesadores.html">Procesadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="discos.html">Discos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="graficas.html">Gráficas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="placas_madre.html">Placas Madre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="memorias_ram.html">Memorias RAM</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="fuentes_alimentacion.html">Fuentes de Alimentación</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección de detalles de fuente de alimentación -->
+    <main class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <img id="imagen-fuente" src="" class="img-fluid" alt="Imagen de Fuente de Alimentación">
+            </div>
+            <div class="col-md-6">
+                <h1 id="nombre-fuente"></h1>
+                <p><strong>Potencia:</strong> <span id="potencia-fuente"></span></p>
+                <p><strong>Certificación:</strong> <span id="certificacion-fuente"></span></p>
+                <p><strong>Precio:</strong> <span id="precio-fuente"></span></p>
+                <button id="añadir-carrito" class="btn btn-primary">Añadir al Carrito</button>
+                <button id="comprar" class="btn btn-success">Comprar</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center p-4">
+        <p>&copy; 2024 Softfine. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Archivos JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/detalle_fuente_alimentacion.js"></script>
+
+</body>
+</html>

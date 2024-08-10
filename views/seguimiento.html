@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento de Envío - Softfine</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        #truckAnimation {
+            display: none;
+            text-align: center;
+        }
+        #trackingMessage {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <div class="banner">
+            <h2>Bienvenido a Softfine</h2>
+            <p>Tu tienda de productos de PC de confianza</p>
+        </div>
+        <h1>Softfine</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../../index.html"><img src="../img/logo.png" alt="Logo" width="50"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container my-5">
+        <section>
+            <h2 class="text-center">Seguimiento de Envío</h2>
+            <div class="text-center">
+                <p><strong>Dirección de Entrega:</strong> Calle Ejemplo 123, Ciudad, País</p>
+                <img id="truckAnimation" src="../img/truck.gif" alt="Camión de Envío" width="100">
+                <div id="trackingMessage">
+                    <h4>Tu producto ha llegado a su destino.</h4>
+                    <p>Gracias por tu compra. ¿Cómo calificarías el servicio?</p>
+                    <button class="btn btn-primary mt-3" onclick="showRating()">Calificar</button>
+                </div>
+            </div>
+            <button class="btn btn-primary mt-3" onclick="completeTracking()">Confirmar Recepción</button>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Softfine. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function completeTracking() {
+            document.getElementById('truckAnimation').style.display = 'block';
+            document.getElementById('trackingMessage').style.display = 'block';
+            document.querySelector('button[onclick="completeTracking()"]').style.display = 'none';
+        }
+
+        function showRating() {
+    window.location.href = 'calificacion.html';
+        }
+
+    </script>
+</body>
+</html>
